@@ -64,10 +64,10 @@ function getContextualRibbonJSON() {
                                     }
                                 ],
                                 "label": "Sign In",
-                                "toolTip": "Refresh table with latest data from data source",
+                                "toolTip": "Sign In",
                                 "superTip": {
-                                    "title": "Refresh table data",
-                                    "description": "Refresh table with latest data from data source."
+                                    "title": "Sign In",
+                                    "description": "Sign In"
                                 },
                                 "actionId": "idRibbonAction"
                             }

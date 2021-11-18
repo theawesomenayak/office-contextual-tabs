@@ -15,7 +15,7 @@ function toggleLoggedInButtons(visible) {
   g.contextualTab.tabs[0].groups[0].controls[0].enabled = visible;
 
   g.contextualTab.tabs[0].groups[1].controls[0].enabled = !visible;
-  for (let index = 1; index < 4; index++) {
+  for (let index = 1; index <= 3; index++) {
     g.contextualTab.tabs[0].groups[1].controls[index].items[0].enabled = !visible;
     g.contextualTab.tabs[0].groups[1].controls[index].items[1].enabled = !visible;
   }
@@ -28,7 +28,6 @@ function toggleLoggedInButtons(visible) {
 
   g.contextualTab.tabs[0].groups[4].controls[0].enabled = !visible;
   g.contextualTab.tabs[0].groups[4].controls[1].enabled = !visible;
-  g.contextualTab.tabs[0].groups[4].controls[2].enabled = !visible;
 
   Office.ribbon.requestUpdate(g.contextualTab);
 }

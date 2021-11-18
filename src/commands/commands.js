@@ -21,26 +21,15 @@ function getGlobal() {
  */
 function runRibbonAction(event) {
   switch (event.source.id) {
-    case "btnSignIn": runSignInAction();
+    case "btnSignIn": toggleLoggedInButtons(false);
       break;
     default: console.log('Event ID: ' + event.source.id + ' was sent, but there is no function handler.');
   }
   event.completed();
 }
 
-/**
- * Sign In.
- */
-function runSignInAction() {
-  toggleLoggedInButtons(false);
-}
-
 // the add-in command functions need to be available in global scope
 // Globals
 const g = getGlobal();
-
 g.contextualTab = getContextualRibbonJSON();
-g.excelFileMockData = excelFileMockData;
-g.sqlMockData = sqlMockData;
 g.runRibbonAction = runRibbonAction;
-g.mockDataSource = 'sqlMockData';

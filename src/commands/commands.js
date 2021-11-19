@@ -31,5 +31,5 @@ function runRibbonAction(event) {
 // the add-in command functions need to be available in global scope
 // Globals
 const g = getGlobal();
-g.contextualTab = getContextualRibbonJSON();
+g.contextualTab = getContextualRibbonJSON(10);
 g.runRibbonAction = runRibbonAction;

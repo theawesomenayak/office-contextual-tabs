@@ -12,7 +12,7 @@
  */
 function toggleLoggedInButtons(visible) {
   let g = getGlobal();
-  g.contextualTab.tabs[0].groups[0].controls[0].enabled = visible;
+  g.contextualTab.tabs[0].groups[0].controls[0].enabled = !visible;
 
   g.contextualTab.tabs[0].groups[1].controls[0].enabled = !visible;
   for (let index = 1; index <= 3; index++) {
